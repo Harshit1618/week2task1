@@ -1,0 +1,25 @@
+<html>
+<h>Hello kmit</h>
+<div id="div1">
+	<p id="p1">ngit.</p>
+</div>
+<button
+    type="button"
+    id="myCheck"
+    onclick="myFunction()"
+    >
+    Click me
+</button>
+<script>
+function myFunction() {
+ document.getElementById("myCheck").click();
+const para = document.createElement("p");
+const node = document.createTextNode("ngit.");
+para.appendChild(node);
+
+const element = document.getElementById("div1");
+const child = document.getElementById("p1");
+element.insertBefore(para,child);
+}
+</script>
+</html>
